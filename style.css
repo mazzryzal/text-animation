@@ -1,46 +1,92 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@700&display=swap');
-*{
+*, body, html{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: "lucida Sans", sans-serif;
 }
 
-body{
+.fCountainer{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 85vh;
+    background-color:  #ffffff;
+}
+.fCountainer>h1{
+        color: white;
+        background-color: #099c9c;
+        text-align: center;
+        text-decoration: none;
+        text-transform: capitalize;
+}
+
+.fCountainer > button {
+    text-decoration: none; ;
+    background-color: #ffffff;
+}
+
+.wrapper{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #067370;
+}
+
+.table{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    background: #392525;
+    background-color: white;
 }
 
-h2{
-    position: relative;
-    font-size: 14vw;
-    color: #4b0101;
-    -webkit-text-stroke: 0.3vw #fcf005;
-    text-transform: capitalize;
+.header > h1 {
+    color: white;
+        background-color: #067370;
+        text-align: center;
+        text-decoration: none;
+        text-transform: capitalize;
 }
 
-h2::before{
-    content:attr(data-text);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    color: #03e37b;
-    -webkit-text-stroke: 0vw #fcf005;
-    border-right: 2px solid #03e37b;
-    overflow: hidden;
-    animation: animate 6s linear infinite;
+.header>h1:hover{
+    color: rgb(255, 238, 0);
+    transition: all .3s ease-in-out;
 }
 
-@keyframes animate{
-    0%,10%,100%{
-        width: 0;
-    }
-    70%,90%{
-        width: 100%;
-    }
+.footer {
+    background-color: #0a6b6b;
+    color: #fff;
+    padding: 20px 0;
+}
+    
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
 }
